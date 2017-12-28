@@ -9,9 +9,11 @@ import java.sql.ResultSet;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.swing.JOptionPane;
 
 public class LoginServlet extends HttpServlet {
@@ -28,7 +30,6 @@ public class LoginServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		//PrintWriter out = response.getWriter();
 		PrintWriter pw = response.getWriter();
 		String s1 = request.getParameter("t1");
 		String s2 = request.getParameter("t2");
@@ -50,9 +51,12 @@ public class LoginServlet extends HttpServlet {
                             while(rs.next())
                             {
                                     flag = true;
-                                    pw.println("hello!!");
+                                    HttpSession session = request.getSession();
+                                    session.setAttribute("name",s1);
+                                    
+                                    response.sendRedirect("http://localhost:8080/Project/HomePage.jsp");
                             }
-                            if(flag == false)pw.println("Not Registered");
+                            if(flag == false)response.sendRedirect("http://localhost:8080/Project/Login.jsp?id=Not%20Registered!");
                         }
 		}catch(Exception e)
 		{

@@ -16,6 +16,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,6 +39,7 @@ public class RegisterServlet extends HttpServlet {
 		{
 			Connection con;
 			PreparedStatement st;
+                        Statement st1;
 			ResultSet rs;
 			Class.forName("com.mysql.jdbc.Driver");
 			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","K@pil1998");
@@ -53,8 +55,7 @@ public class RegisterServlet extends HttpServlet {
 			String s8 = request.getParameter("p3");
                         
 			if(s4.equals(s9) == false){
-                            pw.println("Password Don't match!");
-                            //response.sendRedirect("http://localhost:8080/Project/Register.jsp");
+                            response.sendRedirect("http://localhost:8080/Project/Register.jsp?id=Password%20not%20Matched!");
                         }
                         else{                  
                             st.setString(1, s1);
@@ -68,15 +69,17 @@ public class RegisterServlet extends HttpServlet {
                             boolean ctr = st.execute();
                             //pw.println("Registration Successful");
                             response.sendRedirect("http://localhost:8080/Project/Login.jsp");
+                            HttpSession session=request.getSession();  
+                            session.invalidate();
+                            st1 = con.createStatement();
+                            st1.executeUpdate("truncate table Cart");
                         }
 		}
 		catch(Exception e)
 		{
-                    pw.print(e);
-			pw.println("Username Exists!!!!!!");
+                    //pw.print(e);
+                    response.sendRedirect("http://localhost:8080/Project/Register.jsp?id=Username%20Exists!");
 		}
-		
-		//response.getWriter().append("Served at: ").append(request.getContextPath());
 	}
 	
 

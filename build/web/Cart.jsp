@@ -28,6 +28,37 @@
     top: 130px;
     left: 330px;
 }
+.pos{
+            position: absolute;
+            right: 30px;
+            top: 120px;
+            font-size: 30px;
+            font-family: "Georgia";
+            color: white;
+        }
+        
+        .lab {
+        font-size: 30px;
+        font-family: "Georgia";
+        position: absolute;
+        right: 30px;
+        top: 200px;
+        color: white; 
+        width: 250px;
+        display: inline;
+        vertical-align: 500px;
+}
+.lab2 {
+        font-size: 25px;
+        font-family: "Georgia";
+        position: absolute;
+        right: 30px;
+        top: 350px;
+        color: white; 
+        width: 250px;
+        display: inline;
+        vertical-align: 500px;
+}
 .right{
     position: absolute;
     top: 245px;
@@ -146,6 +177,7 @@ display: none;
         <div>                 
                 <fieldset  class="left" style="width:44%; ">
                 <% 
+                String id1=request.getParameter("id2");
                     int TAmount=0,pay=0,tax=0;
                 try
                 {
@@ -165,8 +197,19 @@ display: none;
                         %>
                         <h1 style='font-family: antigua; color: yellow; padding-left: 25%; font-size: 36px'>Your Cart is Empty</h1>
                         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                </fieldset>
+                        <div class="pos">
+            <b>We are BINDAL'S</b>
+        </div>
+        <label class="lab">
+        YOUR ONE-STOP FASHION DESTINATION
+        </label>
+        <label class="lab2">
+        Shop from over 850 of the best brands and labels. Plus, get your daily fix of the freshest style.
+        </label>
                         <%
                     }
+                    else{
                     rs = st.executeQuery("select * from Cart");
                 while(rs.next())
                 {              
@@ -210,6 +253,7 @@ display: none;
               <%
                     
                 }
+                    
                 %>
           </fieldset>
                   </div>
@@ -267,7 +311,7 @@ display: none;
                                         </tr>
                                         
                                         <tr>
-                                            <td colspan="2"><button class='button3'>PLACE ORDER</button></td>
+                                            <td colspan="2"><a href="http://localhost:8080/Project/OrderServlet" class='button3'>PLACE ORDER</a></td>
                                         </tr>
                                     </table>
 
@@ -277,6 +321,7 @@ display: none;
                  <h1 class="amnt">Total Amount: Rs.<%= pay %></h1>
 </form>
                 <%
+                }
                 }
                 catch(Exception e)
                 {

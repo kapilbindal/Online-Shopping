@@ -43,7 +43,7 @@ div.gallery {
  //margin: 5px;
  //position: relative;
  padding: 5px;
- margin-top:80px;
+ margin-top:100px;
  margin-left: 50px;
  border: 1px solid #ccc;
  left: 300px;
@@ -104,9 +104,7 @@ display: none;
                 {
                 %>
                 <div class="gallery" style="border: thin solid white; border-radius: 7px;">
-<!--                            <a target="_blank" href="#">-->
-                              <img class="image" src="<%= rs.getString(5) %>"  style="width:300px; height:300px; border-radius: 7px;" >
-<!--                            </a>-->
+                            <img class="image" src="<%= rs.getString(5) %>"  style="width:300px; height:300px; border-radius: 7px;" >
                             <div class="desc"> 
                                 <%=rs.getString(6)%><br>
                                 <font color="yellow"><strike>Rs.<%=rs.getString(7)%></strike>&nbsp;&nbsp;Rs.<%=rs.getString(8)%></font><font color="blue">&nbsp<%=rs.getString(9)%></font>
@@ -132,7 +130,7 @@ display: none;
                                 </select>
                                         <%
                                     }
-                                else if(rs.getString(4).equals("GShoes")) {
+                                else if(rs.getString(4).equals("KShoes")) {
                                 %>
                                 <select id="<%=rs.getString(1)%>">
                                     <option value="24">24</option>
@@ -143,7 +141,7 @@ display: none;
                                 </select>
                                          <%
                                     }
-                                else if(rs.getString(4).equals("Dress")) {
+                                else if(rs.getString(4).equals("KidsWear")) {
                                 %>
                                 <select id="<%=rs.getString(1)%>">
                                     <option value="2-3Y">2-3Y</option>
@@ -152,15 +150,57 @@ display: none;
                                     <option value="5-6Y">5-6Y</option>
                                     <option value="6-7Y">6-7Y</option>
                                 </select>
+                                    <%
+                                    }
+                                else if(rs.getString(10).equals("InfantsWear")) {
+                                %>
+                                <select id="<%=rs.getString(1)%>">
+                                    <option value="Newborn">Newborn</option>
+                                    <option value="0-3M">0-3M</option>
+                                    <option value="3-6M">3-6M</option>
+                                    <option value="6-9M">6-9M</option>
+                                    <option value="9-12M">9-12M</option>
+                                </select>
+                                    <%
+                                    }
+                                else if(rs.getString(10).equals("IShoes")) {
+                                %>
+                                <select id="<%=rs.getString(1)%>">
+                                    <option value="15">15</option>
+                                    <option value="16">16</option>
+                                    <option value="17">17</option>
+                                </select>
                                 <%
                                     }
-                                else if(rs.getString(4).equals("T-Shirt")|| rs.getString(4).equals("Jacket") || rs.getString(4).equals("Kurta")) {
+                                else if(rs.getString(4).equals("T-Shirt")|| rs.getString(4).equals("Tops") || rs.getString(4).equals("Jacket") || rs.getString(4).equals("Kurta")) {
                                 %>
                                 <select id="<%=rs.getString(1)%>">
                                     <option value="S">S</option>
                                     <option value="M">M</option>
                                     <option value="L">L</option>
                                     <option value="XL">XL</option>
+                                </select>
+                                      <%
+                                    }
+                                else if(rs.getString(4).equals("skirt") || rs.getString(4).equals("Sweatshirt")) {
+                                %>
+                                <select id="<%=rs.getString(1)%>">
+                                    <option value="6">6</option>
+                                    <option value="8">8</option>
+                                    <option value="10">10</option>
+                                    <option value="12">12</option>
+                                    <option value="14">14</option>
+                                </select>
+                                <%
+                                }
+                                    else if(rs.getString(4).equals("WShoes")) {
+                                %>
+                                <select id="<%=rs.getString(1)%>">
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
                                 </select>
                                 <% }
                                 else if(rs.getString(4).equals("Jeans")||rs.getString(4).equals("Shorts")){  

@@ -73,7 +73,10 @@ hr {
         </style>
     </head>
     <body>
-        
+         <%
+                //PrintWriter pw=null;
+                //String id1=request.getParameter("id2");
+        %>
         <div class="abs" >
         <img class="mySlides w3-center w3-animate-bottom" alt="no. 1" style="width:730px; height:700px" src="images\C1.jpg">
         <img class="mySlides w3-center w3-animate-bottom" alt="no. 2" style="width:730px; height:700px" src="images\C2.jpg">

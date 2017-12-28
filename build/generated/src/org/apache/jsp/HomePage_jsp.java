@@ -3,6 +3,7 @@ package org.apache.jsp;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.jsp.*;
+import java.io.PrintWriter;
 
 public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
     implements org.apache.jasper.runtime.JspSourceDependent {
@@ -194,12 +195,12 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <li><a href=\"http://localhost:8080/Project/M-Sports.jsp\">SPORTS WEAR</a></li>\n");
       out.write("              <li><a href=\"http://localhost:8080/Project/M-Casual.jsp\">CASUAL WEAR</a></li>\n");
       out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=Formal\">FORMAL WEAR</a></li>\n");
-      out.write("              <li><a href=\"\">WEDDING WEAR</a></li>\n");
+      out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=Wedding\">WEDDING WEAR</a></li>\n");
       out.write("              </ul>\n");
       out.write("          </li>\n");
       out.write("          <li><a> &nbsp; WOMEN</a>\n");
       out.write("          <ul class=\"submenu\">\n");
-      out.write("              <li><a href=\"\">TEENAGER</a></li>\n");
+      out.write("              <li><a href=\"http://localhost:8080/Project/W-Teenager.jsp\">TEENAGER</a></li>\n");
       out.write("              <li><a href=\"\">NIGHT WEAR</a></li>\n");
       out.write("              <li><a href=\"\">DESIGNER SUIT</a></li>\n");
       out.write("              <li><a href=\"\">DESIGNER SAREE</a></li>           \n");
@@ -207,9 +208,9 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          </li>\n");
       out.write("          <li><a> &nbsp; KIDS</a>\n");
       out.write("          <ul class=\"submenu\">\n");
-      out.write("              <li><a href=\"\">GIRLS</a></li>\n");
-      out.write("              <li><a href=\"\">BOYS</a></li>\n");
-      out.write("              <li><a href=\"\">INFANTS</a></li>\n");
+      out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=Girls\">GIRLS</a></li>\n");
+      out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=Boys\">BOYS</a></li>\n");
+      out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=Infants\">INFANTS</a></li>\n");
       out.write("              </ul>\n");
       out.write("          </li>\n");
       out.write("          <li><a href=\"#About Us\">&nbsp;SALE</a></li>\n");
@@ -237,6 +238,7 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </script>\n");
       out.write("</html>\n");
       out.write('\n');
+      out.write("\n");
       out.write("\n");
       out.write("\n");
       out.write("\n");
@@ -295,16 +297,48 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        display: inline;\n");
       out.write("        vertical-align: 500px;\n");
       out.write("}\n");
+      out.write(".user {\n");
+      out.write("    position: relative;\n");
+      out.write("    //top: 18px;\n");
+      out.write("    left: 400px;\n");
+      out.write("    font-size: 20px;\n");
+      out.write("}\n");
       out.write("</style>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        <ul class=\"breadcrumb\">\n");
-      out.write("        <li><a href=\"http://localhost:8080/Project/Login.jsp\">SIGN IN</a></li>\n");
+      out.write("        <div>\n");
+      out.write("        <ul class=\"breadcrumb\"> \n");
+      out.write("           ");
+
+//                PrintWriter pw = null;
+//                HttpSession s=request.getSession(false);  
+//                if(s!=null){ 
+                    //pw.print(s);
+                HttpSession s=request.getSession(false);  
+                if(s!=null){  
+                String n=(String)s.getAttribute("name");  
+                if(n != null){
+           
+      out.write("\n");
+      out.write("           <li><a href=\"http://localhost:8080/Project/LogOutServlet\">SIGN OUT</a></li>\n");
+      out.write("           ");
+  } else if(n == null) { 
+      out.write("\n");
+      out.write("        <li><a href=\"http://localhost:8080/Project/Login.jsp\">LOGIN</a></li>\n");
+      out.write("            ");
+ session.invalidate();}}
+           else{
+      out.write("\n");
+      out.write("                <li><a href=\"http://localhost:8080/Project/Login.jsp\">LOGIN</a></li>\n");
+      out.write("                ");
+ } 
+      out.write("\n");
       out.write("        <li><a href=\"http://localhost:8080/Project/Register.jsp\">SIGN UP</a></li>\n");
       out.write("        <li><a href=\"#\">1800-123-1555</a></li>\n");
       out.write("        <li><a href=\"http://localhost:8080/Project/Cart.jsp\">CART <img src=\"images\\bag.png\"  width=\"25\" height=\"25\"></a></li>\n");
       out.write("        <li><a href=\"http://localhost:8080/Project/Wishlist.jsp\">WISHLIST</a></li>\n");
       out.write("        </ul>\n");
+      out.write("            </div>\n");
       out.write("        <div class=\"pos\">\n");
       out.write("            <b>We are BINDAL'S</b>\n");
       out.write("        </div>\n");
@@ -390,7 +424,12 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        </style>\n");
       out.write("    </head>\n");
       out.write("    <body>\n");
-      out.write("        \n");
+      out.write("         ");
+
+                //PrintWriter pw=null;
+                //String id1=request.getParameter("id2");
+        
+      out.write("\n");
       out.write("        <div class=\"abs\" >\n");
       out.write("        <img class=\"mySlides w3-center w3-animate-bottom\" alt=\"no. 1\" style=\"width:730px; height:700px\" src=\"images\\C1.jpg\">\n");
       out.write("        <img class=\"mySlides w3-center w3-animate-bottom\" alt=\"no. 2\" style=\"width:730px; height:700px\" src=\"images\\C2.jpg\">\n");

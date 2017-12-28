@@ -1,9 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<div>
 <%@ include file = "Header.jsp" %>
-<%@ include file = "SubHeader.jsp" %></div>
-
-</div>
+<%@ include file = "SubHeader.jsp" %>
 <html>
 <head>
     <style>
@@ -14,6 +11,13 @@
             color: black;
              //border: none;
         }
+         .order{
+               position: absolute;
+                top: 10%;
+                right: 45%;
+                font-size: 25px;
+                color: #33cc33;
+            }
         input {
             background-color: #DC143C;
         }
@@ -35,7 +39,14 @@ font {
     </style>
 </head>
 <body>
-   
+    <%   String i=request.getParameter("id");
+         if(i == null){
+    %>
+    <h1 class="order"></h1>
+    <% } else{ %>
+    <h1 class="order"><%= i %></h1>
+    <% } %>
+        
 <form action = "http://localhost:8080/Project/RegisterServlet" method = "post">
 <center>
 <br>

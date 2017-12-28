@@ -148,7 +148,7 @@ li:hover .submenu {
           </li>
           <li><a> &nbsp; WOMEN</a>
           <ul class="submenu">
-              <li><a href="">TEENAGER</a></li>
+              <li><a href="http://localhost:8080/Project/W-Teenager.jsp">TEENAGER</a></li>
               <li><a href="">NIGHT WEAR</a></li>
               <li><a href="">DESIGNER SUIT</a></li>
               <li><a href="">DESIGNER SAREE</a></li>           

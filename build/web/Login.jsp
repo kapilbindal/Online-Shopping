@@ -19,10 +19,24 @@ legend {
     color: yellow;
     font-size: 50px;
 }
+.order{
+               position: absolute;
+                top: 10%;
+                right: 45%;
+                font-size: 25px;
+                color: #33cc33;
+            }
+
     </style>
 </head>
 <body>
-     
+    <%   String i=request.getParameter("id");
+         if(i == null){
+    %>
+    <h1 class="order"></h1>
+    <% } else{ %>
+    <h1 class="order"><%= i %></h1>
+    <% } %>
 <center>
     <br>
     <fieldset style="width:400px; height:400px;">

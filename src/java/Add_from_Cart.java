@@ -82,8 +82,6 @@ public class Add_from_Cart extends HttpServlet {
                     st1.setString(9,s10);
                     boolean ctr = st1.execute();
                     
-                    //char[] alphabet = "".toCharArray();
-                    
                     response.sendRedirect("http://localhost:8080/Project/Cart.jsp");
                 }
                 catch(Exception e){}
