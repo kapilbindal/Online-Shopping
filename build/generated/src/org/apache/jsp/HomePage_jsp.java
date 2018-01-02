@@ -179,7 +179,6 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("        display: inline;\n");
       out.write("        vertical-align: 500px;\n");
       out.write("}\n");
-      out.write("\n");
       out.write("</style>\n");
       out.write("    \n");
       out.write("    </head>\n");
@@ -202,8 +201,9 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("          <li><a> &nbsp; WOMEN</a>\n");
       out.write("          <ul class=\"submenu\">\n");
       out.write("              <li><a href=\"http://localhost:8080/Project/W-Teenager.jsp\">TEENAGER</a></li>\n");
-      out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=WNight\">NIGHT WEAR</a></li>\n");
-      out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=WDesign\">DESIGNER SUIT & SAREES</a></li>\n");
+      out.write("              <li><a href=\"\">NIGHT WEAR</a></li>\n");
+      out.write("              <li><a href=\"\">DESIGNER SUIT</a></li>\n");
+      out.write("              <li><a href=\"\">DESIGNER SAREE</a></li>           \n");
       out.write("              </ul>\n");
       out.write("          </li>\n");
       out.write("          <li><a> &nbsp; KIDS</a>\n");
@@ -213,9 +213,9 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("              <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=Infants\">INFANTS</a></li>\n");
       out.write("              </ul>\n");
       out.write("          </li>\n");
-      out.write("          <li><a href=\"http://localhost:8080/Project/Brands.jsp?id=Sale\">&nbsp;SALE</a></li>\n");
-      out.write("          <li><a href=\"http://localhost:8080/Project/About.jsp\">&nbsp;ABOUT US</a></li>\n");
-      out.write("          <li><a href=\"http://localhost:8080/Project/StoreLocator.jsp\">&nbsp;STORE LOCATOR</a></li><br>\n");
+      out.write("          <li><a href=\"#About Us\">&nbsp;SALE</a></li>\n");
+      out.write("          <li><a href=\"#About Us\">&nbsp;ABOUT US</a></li>\n");
+      out.write("          <li><a href=\"#contact\">&nbsp;STORE LOCATOR</a></li><br>\n");
       out.write("          <li>\n");
       out.write("              <a href=\"#\"><i class=\"fa fa-facebook\"></i></a>\n");
       out.write("              <a href=\"#\"><i class=\"fa fa-twitter\"></i></a>\n");

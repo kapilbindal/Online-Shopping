@@ -162,13 +162,6 @@ display: none;
                                     <option value="42">42</option>
                                     <option value="44">44</option>
                                 </select>
-                                         <%
-                                    }
-                                else if(rs.getString(10).equals("Design")) {
-                                %>
-                                <select id="<%=rs.getString(1)%>">
-                                    <option value="OneSize">OneSize</option>
-                                </select>
                                 <%
                                     }
                                 else if(rs.getString(10).equals("T-Shirt")|| rs.getString(10).equals("Tops")|| rs.getString(10).equals("Jacket") || rs.getString(10).equals("Kurta")) {

@@ -2,8 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">        <style>
             .smal {
             position: absolute;
             position: fixed;
@@ -20,7 +19,7 @@
   width: 30px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  //margin: 5px 2px;
   border-radius: 50%;
 }
 
@@ -128,7 +127,6 @@ li:hover .submenu {
         display: inline;
         vertical-align: 500px;
 }
-
 </style>
     
     </head>
@@ -151,8 +149,9 @@ li:hover .submenu {
           <li><a> &nbsp; WOMEN</a>
           <ul class="submenu">
               <li><a href="http://localhost:8080/Project/W-Teenager.jsp">TEENAGER</a></li>
-              <li><a href="http://localhost:8080/Project/Brands.jsp?id=WNight">NIGHT WEAR</a></li>
-              <li><a href="http://localhost:8080/Project/Brands.jsp?id=WDesign">DESIGNER SUIT & SAREES</a></li>
+              <li><a href="">NIGHT WEAR</a></li>
+              <li><a href="">DESIGNER SUIT</a></li>
+              <li><a href="">DESIGNER SAREE</a></li>           
               </ul>
           </li>
           <li><a> &nbsp; KIDS</a>
@@ -162,9 +161,9 @@ li:hover .submenu {
               <li><a href="http://localhost:8080/Project/Brands.jsp?id=Infants">INFANTS</a></li>
               </ul>
           </li>
-          <li><a href="http://localhost:8080/Project/Brands.jsp?id=Sale">&nbsp;SALE</a></li>
-          <li><a href="http://localhost:8080/Project/About.jsp">&nbsp;ABOUT US</a></li>
-          <li><a href="http://localhost:8080/Project/StoreLocator.jsp">&nbsp;STORE LOCATOR</a></li><br>
+          <li><a href="#About Us">&nbsp;SALE</a></li>
+          <li><a href="#About Us">&nbsp;ABOUT US</a></li>
+          <li><a href="#contact">&nbsp;STORE LOCATOR</a></li><br>
           <li>
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>

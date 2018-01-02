@@ -84,10 +84,10 @@ hr {
         <img class="mySlides w3-center w3-animate-bottom" alt="no. 4" style="width:730px; height:700px" src="images\C4.jpg">
         </div>
        
-        <div class="boxy pos1"><a href="http://localhost:8080/Project/M-Casual.jsp">VIEW MEN</a></div>
-        <div class="boxy pos2"><a href="http://localhost:8080/Project/W-Teenager.jsp">VIEW WOMEN</a></div>
-        <div class="boxy pos3"><a href="http://localhost:8080/Project/Brands.jsp?id=Boys">VIEW KIDS</a></div>
-        <div class="boxy pos4"><a href="http://localhost:8080/Project/Brands.jsp?id=Infants">VIEW INFANTS</a></div>
+        <div class="boxy pos1">VIEW MEN</div>
+        <div class="boxy pos2">VIEW WOMEN</div>
+        <div class="boxy pos3">VIEW KIDS</div>
+        <div class="boxy pos4">VIEW INFANTS</div>
         <hr width="730">
         <label class="lab3" >
             <b>EXPERIENCE</b> AN <b>EXCLUSIVE BRANDS.</b>

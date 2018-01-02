@@ -128,13 +128,6 @@ display: none;
                                     <option value="10">10</option>
                                     <option value="11">11</option>
                                 </select>
-                                    <%
-                                    }
-                                else if(rs.getString(4).equals("Design")) {
-                                %>
-                                <select id="<%=rs.getString(1)%>">
-                                    <option value="OneSize">OneSize</option>
-                                </select>
                                         <%
                                     }
                                 else if(rs.getString(4).equals("KShoes")) {
