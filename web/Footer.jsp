@@ -9,9 +9,6 @@
                 position: absolute  ;
                 bottom: 0;
                 overflow: auto;
-                //margin-bottom: 0px;
-                ///right: 0;
-                //left: 0;
             }
             .lab22 {
         font-size: 15px;

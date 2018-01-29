@@ -12,8 +12,6 @@ ul.breadcrumb {
     right: 0;
     padding: 10px 16px;
     list-style-type: none;
-    
-    //background-color: #eee;
     font-size: 20px;
 }
 ul.breadcrumb li {
@@ -22,14 +20,11 @@ ul.breadcrumb li {
     border-bottom: none;
 }
 ul.breadcrumb li+li:before {
-    //padding: 8px;
     color: white;
     content: "/\00a0";
 }
 .user {
     position: relative;
-    //top: 0px;
-    //padding-bottom: 100%;
     left:  400px;
     font-size: 20px;
 }

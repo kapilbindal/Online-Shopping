@@ -33,9 +33,6 @@
 }
 .button {
   display: inline-block;
-  //padding: 15px 25px;
-  //margin-left: 9%;
-  //font-size: 24px;
   width: 200px;
   height: 45px;
   cursor: pointer;
@@ -58,8 +55,6 @@
 }
     
 div.gallery {
- //margin: 5px;
- //position: relative;
  padding: 5px;
  margin-top:80px;
  margin-left: 50px;
@@ -69,11 +64,9 @@ div.gallery {
  width: 300px;
  height: 400px;
  border-style: hidden;
- //font: italic bold 12px/30px Georgia, serif;
 }
 
 .desc {
-// padding: 15px;
   text-align: center;
   font-size: 25px;
   font-family: "Comic Sans MS", cursive, sans-serif;
@@ -97,7 +90,6 @@ select{
     height: 25px;
     font-size: 25px;
     border: hidden;
-    //text-align-last:right;
     padding-right: 10px;
     direction: rtl; 
 }
