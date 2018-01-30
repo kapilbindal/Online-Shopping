@@ -9,11 +9,7 @@
 <html>
     <head>
 <style type="text/css">
-    //.container {
-    //height:100px;
-    //width:600px;
-    //background-color:gray;       
-//}
+   
 .left {
     position: absolute;
     left: 320px;
@@ -22,7 +18,6 @@
     tr, td {
     border-bottom: 1px solid #ddd;
 }
-    //tr:nth-child(even) {background-color: }
     tr:hover {
         background-color:gold; 
     }
@@ -41,8 +36,6 @@ fieldset {
 }
 .button1 {
   display: inline-block;
-  //padding: 15px 25px;
-  //font-size: 24px;
   width: 250px;
   height: 25px;
   cursor: pointer;
@@ -68,13 +61,7 @@ fieldset {
   border: none;
   color: #FFFFFF;
   box-shadow: 0 4px #999;
-  //text-align: center;
   font-size: 20px;
-  //padding: 20px;
-  //width: 200px;
-  //transition: all 0.5s;
-  //cursor: pointer;
- // margin: 5px;
 }   
 </style>
         <script language="javascript">

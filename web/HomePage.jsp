@@ -6,12 +6,10 @@
 <html>
     <head>
         <style>
-            //.mySlides {display:none;}
- 
             .abs {
             position: absolute;
             top: 120px;
-            left: 300px;
+            left: 435px;
         }
         
         
@@ -20,7 +18,7 @@
         font-size: 25px;
         font-family: "Georgia";
         position: absolute;
-        right: 300px;
+        right: 175px;
         top: 850px;
         color: white; 
         width: 750px;
@@ -30,7 +28,7 @@
 .footer {
           position: absolute;
           top: 950px;
-          left: 300px;
+          left: 310px;
           background-color: white;
         }
 .boxy {
@@ -59,7 +57,6 @@
     top: 660px;
 }
 .pos4 {
-    //padding: 20px;
     position: absolute;
     right:60px;
     top: 660px;
@@ -67,7 +64,7 @@
 hr {
     position: absolute;
     top: 820px;
-    right: 320px;   
+    right: 180px;   
     
 }
         </style>
@@ -84,10 +81,6 @@ hr {
         <img class="mySlides w3-center w3-animate-bottom" alt="no. 4" style="width:730px; height:700px" src="images\C4.jpg">
         </div>
        
-        <div class="boxy pos1">VIEW MEN</div>
-        <div class="boxy pos2">VIEW WOMEN</div>
-        <div class="boxy pos3">VIEW KIDS</div>
-        <div class="boxy pos4">VIEW INFANTS</div>
         <hr width="730">
         <label class="lab3" >
             <b>EXPERIENCE</b> AN <b>EXCLUSIVE BRANDS.</b>
@@ -95,7 +88,7 @@ hr {
         </label>
         
         <div class="footer">
-        <fieldset style="width:990px; height:210px;">
+        <fieldset style="width:990px; height:120px;">
             <center>
         <p>© Bindals apparel house ESTD. 1981. All rights reserved with the bindals</p>
         <p>Main Office: 47, Bunglow Road, Kamla Nagar, Delhi - 110007, India Contact No. 91-11-27667495 , 27667691
@@ -103,13 +96,7 @@ hr {
         \
         Rajouri Garden (New Delhi) H-12, Rajouri Garden Main Market, New Delhi- 110027, India Contact No. +91-11-23352335
         Laxmi Nagar (New Delhi) V3S East Centre Laxmi Nagar, New Delhi- 110092, India Contact No. +91-11- xxxxxxxxx
-        Meerut 47, Bunglow Road Abu Ln, Sadar Bazaar Meerut, Uttar Pradesh 250001
-        Moradabad Moradabad,Uttar Pradesh 
-        Lucknow 7/9,shahnajaf road,opp. saharaGanj mall, Lucknow, India 226001 
-        Ghaziabad 54 A, Model Town West, GT Road, Uttar Pradesh, India
-        Muzaffarnagar Muzaffarnagar, Uttar Pradesh</p>
-
-        Buy men's wear, women wear, kids wear , infant wear, baby wear of all top brands from levis, pepe, ucb, j hampstead, louise phillipe, allan solly, mufti, proline, wrangler and many more..
+        </p>
                 </center>
         </fieldset>
         </div>

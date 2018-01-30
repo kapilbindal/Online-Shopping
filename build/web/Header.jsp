@@ -19,7 +19,6 @@
   width: 30px;
   text-align: center;
   text-decoration: none;
-  //margin: 5px 2px;
   border-radius: 50%;
 }
 
@@ -41,7 +40,6 @@
   color: white;
 }
     .h {
-            //position: absolute;
             color: white;
             left: 25px;
             top : 10px;
@@ -91,9 +89,7 @@ li:hover .submenu {
 .submenu {
   font-size: 15px;
   overflow: hidden;
-  //text-align: start ;
   max-height: 0;
-  //-webkit-transition: all 0.5s ease-out;
 }
 
           .pos{
@@ -109,28 +105,19 @@ li:hover .submenu {
         font-size: 30px;
         font-family: "Georgia";
         position: absolute;
-        right: 30px;
-        top: 200px;
+        position: fixed;
+        left: 30px;
+        top: 475px;
         color: white; 
         width: 250px;
         display: inline;
         vertical-align: 500px;
 }
-.lab2 {
-        font-size: 25px;
-        font-family: "Georgia";
-        position: absolute;
-        right: 30px;
-        top: 350px;
-        color: white; 
-        width: 250px;
-        display: inline;
-        vertical-align: 500px;
-}
+
 </style>
     
     </head>
-    <body bgcolor="#DC143C" >
+    <body bgcolor="#e91640" >
         <div>
         <div class="h"><b>Bindal's</b></div>
         <div class="smal">PREMIUM FAMILY DRESSING</div>
@@ -172,6 +159,10 @@ li:hover .submenu {
         </ul>
         </div>
         
+        <label class="lab">
+        YOUR ONE-STOP FASHION DESTINATION
+        </label>
+       
     </body>
     <script>
         function editRecord(id){
