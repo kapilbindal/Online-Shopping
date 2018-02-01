@@ -1,4 +1,4 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
+f<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <div>
 <%@ include file = "Header.jsp" %>
 <%@ include file = "SubHeader.jsp" %></div>
@@ -86,20 +86,7 @@ hr {
             <b>EXPERIENCE</b> AN <b>EXCLUSIVE BRANDS.</b>
             HAVE FUN AND SAVE MONEY AT OUR <b>APPAREL</b> HOUSE.
         </label>
-        
-        <div class="footer">
-        <fieldset style="width:990px; height:120px;">
-            <center>
-        <p>© Bindals apparel house ESTD. 1981. All rights reserved with the bindals</p>
-        <p>Main Office: 47, Bunglow Road, Kamla Nagar, Delhi - 110007, India Contact No. 91-11-27667495 , 27667691
-        Connaught Place (Delhi) Opposite Gate No. 2, Palika Bazar, Connaught Place, New Delhi- 110001, India Contact No. +91-11-23352335
-        \
-        Rajouri Garden (New Delhi) H-12, Rajouri Garden Main Market, New Delhi- 110027, India Contact No. +91-11-23352335
-        Laxmi Nagar (New Delhi) V3S East Centre Laxmi Nagar, New Delhi- 110092, India Contact No. +91-11- xxxxxxxxx
-        </p>
-                </center>
-        </fieldset>
-        </div>
+      
        
             
         
