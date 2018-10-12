@@ -48,7 +48,7 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       _jspx_out = out;
       _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
 
-      out.write("\r\n");
+      out.write("f\r\n");
       out.write("<div>\r\n");
       out.write("\r\n");
       out.write("<!DOCTYPE html>\r\n");
@@ -169,7 +169,7 @@ public final class HomePage_jsp extends org.apache.jasper.runtime.HttpJspBase
       out.write("</style>\r\n");
       out.write("    \r\n");
       out.write("    </head>\r\n");
-      out.write("    <body bgcolor=\"#f05c79\" >\r\n");
+      out.write("    <body bgcolor=\"#e91640\" >\r\n");
       out.write("        <div>\r\n");
       out.write("        <div class=\"h\"><b>Bindal's</b></div>\r\n");
       out.write("        <div class=\"smal\">PREMIUM FAMILY DRESSING</div>\r\n");
