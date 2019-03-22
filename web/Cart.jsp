@@ -31,32 +31,22 @@
 .pos{
             position: absolute;
             right: 30px;
-            top: 120px;
+            top: 175px;
             font-size: 30px;
             font-family: "Georgia";
             color: white;
         }
         
-        .lab {
-        font-size: 30px;
-        font-family: "Georgia";
-        position: absolute;
-        right: 30px;
-        top: 200px;
-        color: white; 
-        width: 250px;
-        display: inline;
-        vertical-align: 500px;
-}
 .lab2 {
         font-size: 25px;
         font-family: "Georgia";
         position: absolute;
         right: 30px;
-        top: 350px;
+        top: 250px;
         color: white; 
         width: 250px;
         display: inline;
+        text-align: center;
         vertical-align: 500px;
 }
 .right{
@@ -76,8 +66,6 @@
 }
 .button {
   display: inline-block;
-  //padding: 15px 25px;
-  //font-size: 24px;
   width: 150px;
   height: 25px;
   cursor: pointer;
@@ -92,9 +80,6 @@
 }
 .button1 {
   display: none;
-  //padding: 15px 25px;
-  //font-size: 24px;
-  //margin-bottom: 17px;
   width: 100px;
   height: 25px;
   cursor: pointer;
@@ -109,8 +94,6 @@
 }
 .button3 {
   display: inline-block;
-  //padding: 15px 25px;
-  //font-size: 24px;
   width: 340px;
   height: 50px;
   cursor: pointer;
@@ -125,21 +108,16 @@
   box-shadow: 0 4px #999;
 }
 .desc {
-  //padding: 5px;
- // margin: 5px;
   text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .desc2 {
-// padding: 15px;
-  //text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 select{
     border-radius: 5px;
     width: 50px;
     border: hidden;
-    //text-align-last:right;
     padding-right: 20px;
     direction: rtl; 
 }
@@ -152,7 +130,6 @@ display: none;
     left: 54%;
     font-size: 20px;
     color: #ff9900;
-    //text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 .bag{
@@ -161,7 +138,6 @@ display: none;
     left: 25%;
     font-size: 35px;
     color: #ff9900;
-    //text-align: center;
   font-family: "Comic Sans MS", cursive, sans-serif;
 }
 
@@ -201,9 +177,6 @@ display: none;
                         <div class="pos">
             <b>We are BINDAL'S</b>
         </div>
-        <label class="lab">
-        YOUR ONE-STOP FASHION DESTINATION
-        </label>
         <label class="lab2">
         Shop from over 850 of the best brands and labels. Plus, get your daily fix of the freshest style.
         </label>

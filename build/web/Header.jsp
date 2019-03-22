@@ -19,7 +19,6 @@
   width: 30px;
   text-align: center;
   text-decoration: none;
-  //margin: 5px 2px;
   border-radius: 50%;
 }
 
@@ -41,7 +40,6 @@
   color: white;
 }
     .h {
-            //position: absolute;
             color: white;
             left: 25px;
             top : 10px;
@@ -91,9 +89,7 @@ li:hover .submenu {
 .submenu {
   font-size: 15px;
   overflow: hidden;
-  //text-align: start ;
   max-height: 0;
-  //-webkit-transition: all 0.5s ease-out;
 }
 
           .pos{
@@ -109,28 +105,20 @@ li:hover .submenu {
         font-size: 30px;
         font-family: "Georgia";
         position: absolute;
-        right: 30px;
-        top: 200px;
+        position: fixed;
+        left: 30px;
+        top: 500px;
         color: white; 
         width: 250px;
         display: inline;
         vertical-align: 500px;
+        text-align: center;
 }
-.lab2 {
-        font-size: 25px;
-        font-family: "Georgia";
-        position: absolute;
-        right: 30px;
-        top: 350px;
-        color: white; 
-        width: 250px;
-        display: inline;
-        vertical-align: 500px;
-}
+
 </style>
     
     </head>
-    <body bgcolor="#DC143C" >
+    <body bgcolor="#e91640" >
         <div>
         <div class="h"><b>Bindal's</b></div>
         <div class="smal">PREMIUM FAMILY DRESSING</div>
@@ -149,9 +137,8 @@ li:hover .submenu {
           <li><a> &nbsp; WOMEN</a>
           <ul class="submenu">
               <li><a href="http://localhost:8080/Project/W-Teenager.jsp">TEENAGER</a></li>
-              <li><a href="">NIGHT WEAR</a></li>
-              <li><a href="">DESIGNER SUIT</a></li>
-              <li><a href="">DESIGNER SAREE</a></li>           
+              <li><a href="http://localhost:8080/Project/Brands.jsp?id=WNight">NIGHT WEAR</a></li>
+              <li><a href="http://localhost:8080/Project/Brands.jsp?id=WDesign">DESIGNER SUIT & SAREES </a></li>           
               </ul>
           </li>
           <li><a> &nbsp; KIDS</a>
@@ -161,9 +148,9 @@ li:hover .submenu {
               <li><a href="http://localhost:8080/Project/Brands.jsp?id=Infants">INFANTS</a></li>
               </ul>
           </li>
-          <li><a href="#About Us">&nbsp;SALE</a></li>
-          <li><a href="#About Us">&nbsp;ABOUT US</a></li>
-          <li><a href="#contact">&nbsp;STORE LOCATOR</a></li><br>
+          <li><a href="http://localhost:8080/Project/Brands.jsp?id=Sale">&nbsp;SALE</a></li>
+          <li><a href="http://localhost:8080/Project/About.jsp">&nbsp;ABOUT US</a></li>
+          <li><a href="http://localhost:8080/Project/StoreLocator.jsp">&nbsp;STORE LOCATOR</a></li><br>
           <li>
               <a href="#"><i class="fa fa-facebook"></i></a>
               <a href="#"><i class="fa fa-twitter"></i></a>
@@ -172,6 +159,10 @@ li:hover .submenu {
         </ul>
         </div>
         
+        <label class="lab">
+        YOUR ONE-STOP FASHION DESTINATION
+        </label>
+       
     </body>
     <script>
         function editRecord(id){

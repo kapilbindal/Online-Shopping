@@ -9,7 +9,6 @@
             width: 200px;
             height: 25px;
             color: black;
-             //border: none;
         }
          .order{
                position: absolute;
